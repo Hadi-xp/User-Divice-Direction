@@ -6,7 +6,7 @@
     <title>welcome</title>
     <script>
         function redirect(){
-            if(navigator.userAgent.includes('Android')){
+            if(navigator.userAgent.includes('Android' || 'Iphone')){
                 window.location.href = './mobileApp/mobile.html'
             }else if(navigator.userAgent.includes('Windows')){
                 window.location.href = './pcApp/pc.html'
