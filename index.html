@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <script>
+        function redirect(){
+            if(navigator.userAgent.includes('Android')){
+                window.location.href = './mobileApp/mobile.html'
+            }else if(navigator.userAgent.includes('Windows')){
+                window.location.href = './pcApp/pc.html'
+            }
+        }
+        
+    </script>
+</head>
+<body onload="redirect()">
+    <h1>hi</h1>
+</body>
+</html>
